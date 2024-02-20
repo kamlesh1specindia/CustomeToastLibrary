@@ -50,7 +50,7 @@ publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "com.github.kamlesh1specindia"
-            artifactId = "com.demo.toast.library"
+            artifactId = "CustomeToastLibrary"
             version = "1.0.0"
 
             afterEvaluate {
