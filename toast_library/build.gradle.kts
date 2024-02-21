@@ -1,11 +1,11 @@
-
+/*
 buildscript {
     repositories {
         google()
         mavenCentral()
         mavenLocal()
     }
-}
+}*/
 
 plugins {
     id("com.android.library")
