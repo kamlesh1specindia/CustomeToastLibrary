@@ -59,7 +59,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.kamlesh1specindia"
             artifactId = "CustomeToastLibrary"
-            version = "1.1.0"
+            version = "1.1.1"
 
             afterEvaluate {
                 from(components["release"])
@@ -67,3 +67,4 @@ publishing {
         }
     }
 }
+
