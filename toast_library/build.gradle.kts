@@ -10,7 +10,7 @@ buildscript {
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id("maven-publish")
+//    id("maven-publish")
 }
 
 
@@ -37,7 +37,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
 }
 
@@ -54,7 +54,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
 
-publishing {
+/*publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "com.github.kamlesh1specindia"
@@ -66,5 +66,5 @@ publishing {
             }
         }
     }
-}
+}*/
 
