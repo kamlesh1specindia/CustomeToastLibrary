@@ -10,7 +10,7 @@ buildscript {
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-//    id("maven-publish")
+    id("maven-publish")
 }
 
 
@@ -54,17 +54,17 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
 
-/*publishing {
+publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "com.github.kamlesh1specindia"
             artifactId = "CustomeToastLibrary"
-            version = "1.1.10"
+            version = "1.1.20"
 
             afterEvaluate {
                 from(components["release"])
             }
         }
     }
-}*/
+}
 
