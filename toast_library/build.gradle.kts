@@ -1,3 +1,12 @@
+/*
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        mavenLocal()
+    }
+}*/
+
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
@@ -24,11 +33,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "1.8"
     }
 }
 
@@ -45,17 +54,17 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
 
-publishing {
+/*publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "com.github.kamlesh1specindia"
             artifactId = "CustomeToastLibrary"
-            version = "1.1.20"
+            version = "1.1.10"
 
             afterEvaluate {
                 from(components["release"])
             }
         }
     }
-}
+}*/
 
